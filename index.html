@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню с выбором файла</title>
+    <style>
+        /* Стиль для контейнера */
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+
+        /* Меню слева */
+        .menu {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Основной контент справа */
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Меню слева -->
+    <div class="menu">
+        <h3>Выберите файл</h3>
+        <ul>
+            <li><a href="lab1/index.html" target="contentFrame">Страница 1</a></li>
+            <li><a href="lab2/index.html" target="contentFrame">Страница 2</a></li>
+            <li><a href="lab3/index.html" target="contentFrame">Страница 3</a></li>
+            <li><a href="lab4/index.html" target="contentFrame">Страница 4</a></li>
+            <li><a href="lab5/index.html" target="contentFrame">Страница 5</a></li>
+            <li><a href="lab7/index.html" target="contentFrame">Страница 7</a></li>
+        </ul>
+    </div>
+
+    <!-- Основной контент справа (iframe для отображения выбранной страницы) -->
+    <div class="content">
+        <iframe name="contentFrame" src="page1.html"></iframe>
+    </div>
+</div>
+
+</body>
+</html>
